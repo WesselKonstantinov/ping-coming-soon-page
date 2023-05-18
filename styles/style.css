@@ -17,3 +17,37 @@ body {
   font-family: var(--font);
   padding: 2.25rem;
 }
+
+/* || Page styles */
+.page {
+  max-width: 40rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* || Header styles */
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__link {
+  transition: transform 0.2s ease-in-out 0s;
+}
+
+.header__link:hover {
+  transform: scale(1.15);
+}
+
+.header__link:focus-visible {
+  outline: 0.2rem solid var(--color-blue);
+  outline-offset: 0.2rem;
+}
+
+.header__logo {
+  width: 3.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}

@@ -120,6 +120,7 @@ button:focus-visible {
 }
 
 .cta-form__submit {
+  cursor: pointer;
   font-weight: 600;
   border-radius: 1.75rem;
   border: none;
@@ -168,7 +169,7 @@ button:focus-visible {
   border: 1px solid hsl(223 87% 63% / 0.15);
   border-radius: 50%;
   padding: 0.4rem;
-  transition: background-color 0.15s ease-in-out 0s;
+  transition: background-color 0.3s ease-in-out 0s;
 }
 
 .footer__social-link:hover {

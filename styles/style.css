@@ -19,6 +19,24 @@ body {
   padding: 2.25rem;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 0.2rem solid var(--color-blue);
+  outline-offset: 0.2rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 /* || Page styles */
 .page {
   max-width: 40rem;
@@ -42,11 +60,6 @@ body {
   transform: scale(1.15);
 }
 
-.header__link:focus-visible {
-  outline: 0.2rem solid var(--color-blue);
-  outline-offset: 0.2rem;
-}
-
 .header__logo {
   width: 3.5rem;
   height: 1.5rem;
@@ -62,4 +75,67 @@ body {
 .hero__heading--bold {
   font-weight: 700;
   color: var(--color-dark-blue);
+}
+
+/* || CTA form styles */
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 0.75rem;
+}
+
+.cta-form__input {
+  font-weight: 300;
+  border-radius: 1.75rem;
+  border: 1px solid var(--color-pale-blue);
+  box-shadow: 0 0 0.4375rem 0.1875rem hsl(0 0% 0% / 0);
+  padding: 0.625rem 2rem;
+}
+
+.cta-form__input::placeholder {
+  color: var(--color-pale-blue);
+}
+
+.cta-form__submit {
+  font-weight: 600;
+  border-radius: 1.75rem;
+  border: none;
+  box-shadow: 0 0.3125rem 0.625rem 0.125rem hsl(223 87% 63% / 0.23);
+  padding: 0.75rem 2rem;
+  background-color: var(--color-blue);
+  color: white;
+  transition: opacity 0.2s ease-in-out 0s;
+}
+
+.cta-form__submit:hover {
+  opacity: 0.8;
+}
+
+/* || Footer styles */
+.footer__social-link {
+  display: inline-flex;
+  border: 1px solid hsl(223 87% 63% / 0.15);
+  border-radius: 50%;
+  padding: 0.4rem;
+  transition: background-color 0.15s ease-in-out 0s;
+}
+
+.footer__social-link:hover {
+  background-color: var(--color-blue);
+}
+
+.footer__social-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: var(--color-blue);
+  transition: fill 0.15s ease-in-out 0s;
+}
+
+.footer__social-link:hover .footer__social-icon {
+  fill: white;
+}
+
+.footer__copyright {
+  font-size: 0.625rem;
+  color: var(--color-gray);
 }

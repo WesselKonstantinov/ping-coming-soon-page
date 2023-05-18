@@ -41,7 +41,13 @@
             autocomplete="email"
             placeholder="Your email address..."
             class="cta-form__input"
+            aria-describedby="email-error"
           />
+          <div class="cta-form__error" id="email-error" aria-live="polite">
+            <small class="cta-form__error-message">
+              Whoops! It looks like you forgot to add your email
+            </small>
+          </div>
           <button type="submit" class="cta-form__submit">Notify me</button>
         </form>
         <img

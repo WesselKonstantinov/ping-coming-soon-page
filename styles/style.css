@@ -13,7 +13,8 @@
 /* || Global styles */
 body {
   background-color: white;
-  font-size: 1.25rem;
+  color: var(--color-dark-blue);
+  font-size: 0.75rem;
   font-family: var(--font);
   padding: 2.25rem;
 }
@@ -50,4 +51,15 @@ body {
   width: 3.5rem;
   height: 1.5rem;
   object-fit: contain;
+}
+
+/* || Hero styles */
+.hero__heading {
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: var(--color-gray);
+}
+.hero__heading--bold {
+  font-weight: 700;
+  color: var(--color-dark-blue);
 }

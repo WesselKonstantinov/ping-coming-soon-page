@@ -145,6 +145,10 @@ button:focus-visible {
   display: none;
 }
 
+.cta-form__error--visible {
+  display: block;
+}
+
 .cta-form__error-message {
   letter-spacing: 0.0125em;
   font-size: 0.625rem;

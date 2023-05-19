@@ -195,3 +195,73 @@ button:focus-visible {
   font-size: 0.625rem;
   color: var(--color-gray);
 }
+
+/* || Desktop styles */
+@media (min-width: 38.125rem) {
+  body {
+    font-size: 1.25rem;
+    padding-bottom: 3.0625rem;
+  }
+
+  .page {
+    gap: 2.5rem;
+  }
+
+  .header__logo {
+    width: 5.625rem;
+    height: 2.4375rem;
+  }
+
+  .hero {
+    gap: 2.5rem;
+  }
+
+  .hero__text-content {
+    gap: 1rem;
+  }
+
+  .hero__heading {
+    font-size: 3rem;
+  }
+
+  .hero__image {
+    margin-top: 3.375rem;
+  }
+
+  .cta-form {
+    font-size: 1rem;
+    padding-inline: 0;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 1rem;
+  }
+
+  .cta-form__input {
+    padding: 1.125rem 1.875rem;
+  }
+
+  .cta-form__submit {
+    margin-top: 0;
+    padding: 1.125rem;
+  }
+
+  .cta-form__error {
+    grid-row: 2 / 3;
+    text-align: left;
+    padding-left: 1.875rem;
+    margin-bottom: 0;
+  }
+
+  .cta-form__error-message {
+    letter-spacing: 0.0125em;
+    font-size: 0.75rem;
+  }
+
+  .footer {
+    margin-top: 2rem;
+  }
+
+  .footer__copyright {
+    font-size: 0.75rem;
+  }
+}
